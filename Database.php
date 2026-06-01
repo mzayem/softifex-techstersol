@@ -158,14 +158,6 @@ if ($stmt->execute()) {
                             </td>
                         </tr>
 
-                        <tr>
-                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
-                                <strong>Device</strong>
-                            </td>
-                            <td style="border:1px solid #e5e5e5;">
-                                '.$deviceType.'
-                            </td>
-                        </tr>
 
                         <tr>
                             <td style="background:#f8f9fb;border:1px solid #e5e5e5;vertical-align:top;">
