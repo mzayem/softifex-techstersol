@@ -19,6 +19,9 @@ $subject = trim($_POST['subject'] ?? '');
 $email = trim($_POST['email'] ?? '');
 $message = trim($_POST['message'] ?? '');
 $honeypot = $_POST['website'] ?? '';
+$timestamp = date("d M Y, h:i A");
+$ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+$userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
 
 // Validation
 if (
