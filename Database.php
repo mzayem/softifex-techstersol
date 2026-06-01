@@ -72,7 +72,7 @@ if ($stmt->execute()) {
         $adminMail->addAddress('mzayemazam@gmail.com');
 
         $adminMail->isHTML(true);
-        $adminMail->Subject = "🚀 New Softifex Demo Booking Request";
+        $adminMail->Subject = "New Softifex Demo Booking Request";
 
         $adminMail->Body = '
         <!DOCTYPE html>
@@ -134,6 +134,42 @@ if ($stmt->execute()) {
                             </td>
                             <td style="border:1px solid #e5e5e5;">
                                 '.nl2br(htmlspecialchars($message)).'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
+                                <strong>Timestamp</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.$timestamp.'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
+                                <strong>IP Address</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.$ipAddress.'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
+                                <strong>Device</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.$deviceType.'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;vertical-align:top;">
+                                <strong>User Agent</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;font-size:12px;word-break:break-word;">
+                                '.htmlspecialchars($userAgent).'
                             </td>
                         </tr>
 
