@@ -157,8 +157,8 @@ if ($stmt->execute()) {
         <tr>
         <td style="padding:20px 35px; background:#f8f9fb; border-top:1px solid #e5e5e5;">
         <strong>Softifex Systems</strong><br>
-        A comprehensive Pharmaceutical ERP built for distributors,
-        wholesalers, and medical stores.
+        A comprehensive Pharmaceutical ERP built for distributors, and 
+        wholesalers.
         Developed by Techstersol.
         </td>
         </tr>
