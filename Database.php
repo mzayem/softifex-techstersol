@@ -28,7 +28,7 @@ if (
     empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) ||
     empty($message) || strlen($message) < 5
 ) {
-    header("Location: https://techstersol.com?error=1");
+    header("Location: https://softifex.techstersol.com/?error=1");
     exit;
 }
 
@@ -92,7 +92,7 @@ if ($stmt->execute()) {
         $customerMail->Host = 'smtp.hostinger.com';
         $customerMail->SMTPAuth = true;
         $customerMail->Username = 'info@techstersol.com';
-        $customerMail->Password = 'YOUR_NEW_PASSWORD';
+        $customerMail->Password = 'Z1a@y3e4m789@';
         $customerMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $customerMail->Port = 587;
 
