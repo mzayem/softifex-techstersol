@@ -71,14 +71,87 @@ if ($stmt->execute()) {
         $adminMail->setFrom('info@techstersol.com', 'Techstersol');
         $adminMail->addAddress('mzayemazam@gmail.com');
 
-        $adminMail->isHTML(false);
-        $adminMail->Subject = "Softifex Demo Booking Form Submission";
+        $adminMail->isHTML(true);
+        $adminMail->Subject = "🚀 New Softifex Demo Booking Request";
 
-        $adminMail->Body =
-            "Name: $name\n\n" .
-            "Subject: $subject\n\n" .
-            "Email: $email\n\n" .
-            "Message:\n$message";
+        $adminMail->Body = '
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        </head>
+        <body style="font-family:Arial,Helvetica,sans-serif;background:#f4f6f9;padding:20px;">
+
+        <table width="650" cellpadding="0" cellspacing="0" style="margin:auto;background:#fff;border:1px solid #ddd;border-radius:8px;overflow:hidden;">
+
+            <tr>
+                <td style="background:#0a3d8f;padding:20px;text-align:center;">
+                    <h2 style="color:#fff;margin:0;">
+                        New Demo Booking Request
+                    </h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:25px;">
+
+                    <p style="margin-top:0;">
+                        A new demo booking request has been submitted through the Softifex Systems website.
+                    </p>
+
+                    <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;">
+
+                        <tr>
+                            <td style="background:#f8f9fb;width:150px;border:1px solid #e5e5e5;">
+                                <strong>Name</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.htmlspecialchars($name).'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
+                                <strong>Email</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.htmlspecialchars($email).'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
+                                <strong>Subject</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.htmlspecialchars($subject).'
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background:#f8f9fb;border:1px solid #e5e5e5;vertical-align:top;">
+                                <strong>Message</strong>
+                            </td>
+                            <td style="border:1px solid #e5e5e5;">
+                                '.nl2br(htmlspecialchars($message)).'
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="background:#f8f9fb;padding:15px;text-align:center;font-size:12px;color:#666;">
+                    Softifex Systems • Powered by Techstersol
+                </td>
+            </tr>
+
+        </table>
+
+        </body>
+        </html>';
 
         // Send Email
         $adminMail->send();
