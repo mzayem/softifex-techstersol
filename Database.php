@@ -124,7 +124,7 @@ if ($stmt->execute()) {
 
                         <tr>
                             <td style="background:#f8f9fb;border:1px solid #e5e5e5;">
-                                <strong>Subject</strong>
+                                <strong>Company</strong>
                             </td>
                             <td style="border:1px solid #e5e5e5;">
                                 '.htmlspecialchars($subject).'
