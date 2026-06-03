@@ -115,7 +115,7 @@ footer {
 }
 
 .nav-logo img {
-  height: 42px;
+  height: 62px;
   filter: brightness(1.1);
 }
 
@@ -387,6 +387,15 @@ footer {
 }
 
 /* Main terminal window */
+
+.terminal-margin {
+  margin-top: -100px;
+
+  @media (max-width: 768px) {
+    margin-top: 38px;
+  }
+}
+
 .terminal-window {
   background: rgba(10, 20, 38, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1629,16 +1638,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.footer-links a::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: var(--accent);
-  border-radius: 50%;
-  opacity: 0.5;
-  transition: opacity 0.3s;
 }
 
 .footer-links a:hover {
