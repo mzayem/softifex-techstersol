@@ -44,6 +44,9 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .links a{padding:8px 14px;border-radius:10px;color:var(--muted);font-weight:500;font-size:.96rem;transition:color .2s,background .2s}
 .links a:hover{color:#fff;background:rgba(255,255,255,.06)}
 .links .btn{padding:10px 20px;color:#fff;font-size:.95rem}
+/* nav fit */
+.links a{white-space:nowrap}
+@media(min-width:1001px) and (max-width:1220px){.links{gap:0}.links a{padding:8px 9px;font-size:.88rem}.links .btn{padding:9px 14px}.brand{width:160px}.brand img{width:184px;margin:-24px 0 0 -11px}}
 .burger{display:none;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
 
 /* hero */
