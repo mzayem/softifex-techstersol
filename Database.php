@@ -35,6 +35,12 @@ if (
     exit;
 }
 
+// The phone number is optional; add it to the message so it reaches the email and the saved record
+$phone = trim($_POST['phone'] ?? '');
+if ($phone !== '') {
+    $message .= "\n\nPhone: " . substr($phone, 0, 40);
+}
+
 // Database credentials
 $host = "localhost";
 $username = "u563786655_tech";

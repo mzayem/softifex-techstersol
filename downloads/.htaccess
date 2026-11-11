@@ -1,0 +1,7 @@
+# Force the brochure to download instead of opening in the browser
+<IfModule mod_headers.c>
+<FilesMatch "\.pdf$">
+Header set Content-Disposition "attachment; filename=\"Softifex-Brochure.pdf\""
+Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+</IfModule>

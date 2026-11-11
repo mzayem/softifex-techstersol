@@ -1,1753 +1,291 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Softifex Systems - Premium Pharmaceutical ERP Software by Techstersol. Manage Inventory, Sales, Accounting, Purchases & more with intelligent automation."
-    />
-    <meta
-      name="keywords"
-      content="pharmaceutical ERP, inventory management, sales management, accounting software, Pakistan ERP, Techstersol"
-    />
-    <title>Softifex Systems | Pharmaceutical ERP</title>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Softifex - pharmaceutical distribution software with a mobile order-taking app. Inventory, sales, purchase, accounts and reports in one place. By Techstersol." />
+<meta name="keywords" content="pharmaceutical ERP, pharma distribution software, inventory management, batch and expiry, mobile order booking, Pakistan, Techstersol, Softifex" />
+<title>Softifex | Pharma Distribution Software with Mobile App</title>
+<meta property="og:title" content="Softifex - Pharma Distribution Software" />
+<meta property="og:description" content="Inventory, sales, purchase and accounts in one software, plus a mobile app for your salesmen." />
+<meta property="og:image" content="assets/images/screens/overview-dark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="assets/css/site.css?v4" />
+<link rel="icon" type="image/png" href="assets/images/icon.png" />
+</head>
+<body>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<!-- NAV -->
+<nav class="top" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#hero"><img src="assets/images/Softifex-white.png" alt="Softifex" /></a>
+    <button class="burger" id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <div class="links" id="links">
+      <a href="#tour">Product</a>
+      <a href="#features">Features</a>
+      <a href="#modules">Modules</a>
+      <a href="#mobile">Mobile App</a>
+      <a href="#security">Security</a>
+      <a href="#packages">Packages</a>
+      <a href="#faq">FAQ</a>
+      <a href="downloads/Softifex-Brochure.pdf" download><i class="fas fa-file-pdf"></i> Brochure</a>
+      <a class="btn btn-p" href="#demo">Book Demo</a>
+    </div>
+  </div>
+</nav>
 
-    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css?v2" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!-- AOS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-
-    <link rel="icon" type="image/x-icon" href="assets/images/icon.png" />
-  </head>
-  <body>
-    <!-- THREE.JS CANVAS -->
-    <canvas id="bg-canvas"></canvas>
-
-    <!-- ===================== NAVBAR ===================== -->
-    <nav class="navbar navbar-expand-lg" id="navbar">
-      <div class="container">
-        <a class="navbar-brand nav-logo" href="#hero">
-          <img
-            src="assets/images/Softifex-white.png"
-            alt="Softifex Systems Logo"
-            onerror="
-              this.style.display = 'none';
-              this.nextElementSibling.style.display = 'block';
-            "
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto align-items-center gap-1">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#modules">Modules</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mobile-app">Mobile App</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Reviews</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-            <li class="nav-item ms-2">
-              <a class="nav-link btn-nav-cta" href="#demo">Book Demo</a>
-            </li>
-          </ul>
-        </div>
+<!-- HERO -->
+<section id="hero">
+  <div class="glow g1"></div><div class="glow g2"></div><div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="eyebrow rv">Pharma distribution software</span>
+      <h1 class="rv d1">Run your whole distribution business from <em>one clear screen.</em></h1>
+      <p class="rv d2">Inventory, sales, purchase, accounts and reports in one software, with a mobile app that lets your salesmen take orders, cash and returns in the field.</p>
+      <div class="cta-row rv d3">
+        <a href="#demo" class="btn btn-p"><i class="fas fa-calendar-check"></i> Book a free demo</a>
+        <a href="downloads/Softifex-Brochure.pdf" download class="btn btn-g"><i class="fas fa-file-arrow-down"></i> Download brochure</a>
+        <a href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I%27m%20interested%20in%20Softifex%20ERP%20demo" target="_blank" rel="noopener" class="btn btn-w"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
-    </nav>
+    </div>
 
-    <!-- ===================== HERO ===================== -->
-    <section id="hero">
-      <div class="hero-grid-overlay"></div>
-      <div class="hero-glow"></div>
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-6">
-            <div class="hero-badge" data-aos="fade-down" data-aos-delay="60">
-              <span class="dot"></span>
-              Pharmaceutical ERP Solution
-            </div>
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
-              Intelligent ERP for<br />
-              <span class="highlight">Pharma Business</span><br />
-              Management
-            </h1>
-            <p class="hero-sub" data-aos="fade-up" data-aos-delay="300">
-              Softifex Systems delivers a complete pharmaceutical ERP covering
-              Inventory, Sales, Accounts, Purchase, Batch Tracking, Expiry
-              Management, and a Real-Time Mobile Booking App — all in one
-              platform.
-            </p>
-            <div
-              class="d-flex flex-wrap gap-3"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <a href="#demo" class="btn-primary-glow">
-                <i class="fas fa-calendar-check"></i> Book Free Demo
-              </a>
-              <a href="#modules" class="btn-ghost">
-                <i class="fas fa-play-circle"></i> Explore Modules
-              </a>
-            </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-              <div class="stat-item">
-                <div class="stat-number" data-target="500">0</div>
-                <div class="stat-label">Active Users</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number" data-target="18">0</div>
-                <div class="stat-label">Core Modules</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number" data-target="99">0</div>
-                <div class="stat-label">Uptime %</div>
-              </div>
-            </div>
-          </div>
-          <!-- HERO PANEL: Terminal + SaaS Dashboard -->
-          <div
-            class="col-lg-6 terminal-margin"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <div class="hero-panel-wrap" style="position: relative">
-              <!-- Floating card: Stock -->
-              <div
-                class="floating-card"
-                style="top: -16px; left: -20px; animation-delay: 0s"
-              >
-                <div
-                  class="fc-icon"
-                  style="background: rgba(41, 121, 255, 0.15)"
-                >
-                  <i
-                    class="fas fa-boxes"
-                    style="color: var(--accent); font-size: 1rem"
-                  ></i>
-                </div>
-                <div>
-                  <div class="fc-label">Stock Tracked</div>
-                  <div class="fc-value">24,850 Batches</div>
-                </div>
-              </div>
+    <div class="hero-stage rv d2" id="stage">
+      <div class="chip c1"><i class="fas fa-arrow-trend-up"></i><div>Today's sales<small>up 12.4% on yesterday</small></div></div>
+      <div class="chip c2"><i class="fas fa-bell"></i><div>3 new notifications<small>web and phone</small></div></div>
+      <div class="chip c3"><i class="fas fa-shield-halved"></i><div>Encrypted backups<small>automatic, on schedule</small></div></div>
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>softifex / overview</span></div><img src="assets/images/screens/overview-dark.png" alt="Softifex dashboard" /></div>
+      <div class="float hero-phone"><div class="phone"><img src="assets/images/screens/m-home.png" alt="Softifex mobile app" /></div></div>
+      <div class="float hero-phone2"><div class="phone"><img src="assets/images/screens/m-order.png" alt="New order on mobile" /></div></div>
+    </div>
+  </div>
+</section>
 
-              <!-- Floating card: Sales -->
-              <div
-                class="floating-card"
-                style="bottom: -16px; right: -10px; animation-delay: -2s"
-              >
-                <div class="fc-icon" style="background: rgba(0, 230, 118, 0.1)">
-                  <i
-                    class="fas fa-chart-line"
-                    style="color: var(--green); font-size: 1rem"
-                  ></i>
-                </div>
-                <div>
-                  <div class="fc-label">Monthly Sales</div>
-                  <div class="fc-value">↑ 38% Growth</div>
-                </div>
-              </div>
+<!-- STRIP -->
+<div class="strip"><div class="marq">
+  <span><i class="fas fa-boxes-stacked"></i> Batch and expiry</span><span><i class="fas fa-receipt"></i> Sales invoices</span><span><i class="fas fa-cart-plus"></i> Purchase orders</span><span><i class="fas fa-building-columns"></i> Accounts and ledgers</span><span><i class="fas fa-chart-column"></i> 20+ reports</span><span><i class="fas fa-mobile-screen"></i> Mobile order taking</span><span><i class="fas fa-user-shield"></i> Role-based access</span><span><i class="fas fa-bell"></i> Notifications</span><span><i class="fas fa-database"></i> Automatic backups</span><span><i class="fas fa-moon"></i> Light and dark themes</span>
+  <span><i class="fas fa-boxes-stacked"></i> Batch and expiry</span><span><i class="fas fa-receipt"></i> Sales invoices</span><span><i class="fas fa-cart-plus"></i> Purchase orders</span><span><i class="fas fa-building-columns"></i> Accounts and ledgers</span><span><i class="fas fa-chart-column"></i> 20+ reports</span><span><i class="fas fa-mobile-screen"></i> Mobile order taking</span><span><i class="fas fa-user-shield"></i> Role-based access</span><span><i class="fas fa-bell"></i> Notifications</span><span><i class="fas fa-database"></i> Automatic backups</span><span><i class="fas fa-moon"></i> Light and dark themes</span>
+</div></div>
 
-              <!-- Terminal window -->
-              <div class="terminal-window" style="margin: 20px 16px">
-                <div class="terminal-titlebar">
-                  <div class="tb-dot tb-red"></div>
-                  <div class="tb-dot tb-yellow"></div>
-                  <div class="tb-dot tb-green"></div>
-                  <span class="terminal-title-text"
-                    >softifex-erp ~ inventory-sync</span
-                  >
-                  <span
-                    style="
-                      margin-left: auto;
-                      font-family: var(--font-mono);
-                      font-size: 0.65rem;
-                      color: var(--text-dim);
-                    "
-                    >v2.4.1</span
-                  >
-                </div>
-
-                <div class="terminal-body" id="terminal-body">
-                  <!-- Lines injected by JS -->
-                </div>
-
-                <!-- SaaS Dashboard Mini Panel -->
-                <div class="saas-panel">
-                  <div class="saas-panel-header">
-                    <span class="saas-panel-title">LIVE DASHBOARD</span>
-                    <span class="saas-live-badge"><span></span> LIVE</span>
-                  </div>
-                  <div class="saas-metrics">
-                    <div class="saas-metric">
-                      <div class="m-val" id="m-orders">—</div>
-                      <div class="m-lbl">Orders</div>
-                    </div>
-                    <div class="saas-metric">
-                      <div class="m-val" id="m-stock">—</div>
-                      <div class="m-lbl">In Stock</div>
-                    </div>
-                    <div class="saas-metric">
-                      <div class="m-val" id="m-rev">—</div>
-                      <div class="m-lbl">Revenue</div>
-                    </div>
-                  </div>
-                  <div class="mini-chart" id="mini-chart">
-                    <!-- Bars injected by JS -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- PRODUCT TOUR -->
+<section id="tour">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">Take the tour</span>
+      <h2 class="title rv">See the software, <em>not just the promise</em></h2>
+      <p class="sub rv">Click through the screens your team will use every day.</p></div>
+    <div class="tour">
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-i="0"><b><i class="fas fa-gauge-high"></i>Dashboard</b><p>Sales, cash, returns and receivables with trends and top-10 lists.</p></button>
+        <button class="tab" data-i="1"><b><i class="fas fa-receipt"></i>Sales invoice</b><p>Batch-aware invoices with discounts and an instant stock check.</p></button>
+        <button class="tab" data-i="2"><b><i class="fas fa-capsules"></i>Products</b><p>Vendors, groups, products and batches, searchable and exportable.</p></button>
+        <button class="tab" data-i="3"><b><i class="fas fa-list-ol"></i>Stock ledger</b><p>Every unit in and out, by product and batch, with a running balance.</p></button>
+        <button class="tab" data-i="4"><b><i class="fas fa-chart-pie"></i>Reports</b><p>More than 20 ready reports, to screen, Excel or PDF.</p></button>
+        <button class="tab" data-i="5"><b><i class="fas fa-user-lock"></i>Roles and access</b><p>Decide, page by page, what each person can see and do.</p></button>
       </div>
-    </section>
-
-    <!-- ===================== FEATURES ===================== -->
-    <section id="features" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">Core Capabilities</span>
-          <h2 class="section-title">Everything Pharma Needs</h2>
-          <p class="section-subtitle">
-            Purpose-built for pharmaceutical distributors, wholesalers, and
-            medical stores in Pakistan and beyond.
-          </p>
-        </div>
-        <div class="row g-4">
-          <!-- Feature Cards -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-warehouse"></i></div>
-              <h5>Pharmaceutical Inventory</h5>
-              <p>
-                Track every SKU, batch, and expiry date in real time across
-                multiple branches.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <h5>Purchase Management</h5>
-              <p>
-                Streamline vendor orders, GRNs, and purchase returns with
-                complete audit trails.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-              <h5>Sales Management</h5>
-              <p>
-                Process invoices, returns, discounts, and credit notes with
-                area-wise tracking.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-calculator"></i></div>
-              <h5>Financial Accounting</h5>
-              <p>
-                Full double-entry accounting with ledgers, P&L, balance sheet,
-                and cash flow.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-file-invoice-dollar"></i>
-              </div>
-              <h5>GST & Tax Reporting</h5>
-              <p>
-                Automated GST computation, return filing support, and tax
-                invoice generation.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
-              <h5>Batch & Expiry Tracking</h5>
-              <p>
-                FEFO/FIFO batch control with automated expiry alerts and hold
-                management.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-users"></i></div>
-              <h5>Customer Management</h5>
-              <p>
-                Complete CRM with credit limits, payment tracking, and
-                customer-wise ledgers.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-truck"></i></div>
-              <h5>Supplier Management</h5>
-              <p>
-                Manage vendor master, payables, and supplier performance
-                analytics centrally.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
-              <h5>Medical Representative</h5>
-              <p>
-                Assign territories, track doctor calls, and measure MR-wise
-                sales performance.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-map-marked-alt"></i>
-              </div>
-              <h5>Area Wise Sales Tracking</h5>
-              <p>
-                Zone-based reporting for granular visibility into region-level
-                performance.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-tachometer-alt"></i>
-              </div>
-              <h5>Real-Time Dashboards</h5>
-              <p>
-                Live KPIs for sales, stock, dues, and purchases — visible the
-                moment they happen.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-              <h5>Role Based Security</h5>
-              <p>
-                Granular user permissions — control who sees and does what, down
-                to the button.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="stage">
+        <div class="browser"><div class="bar"><i></i><i></i><i></i><span id="url">softifex / overview</span></div>
+          <div class="shotbox" id="shots">
+            <img class="on" src="assets/images/screens/overview-light.png" alt="Dashboard" data-url="softifex / overview" />
+            <img src="assets/images/screens/invoice.png" alt="Sales invoice" data-url="softifex / sales / invoice" />
+            <img src="assets/images/screens/products.png" alt="Products" data-url="softifex / products" />
+            <img src="assets/images/screens/ledger.png" alt="Stock ledger" data-url="softifex / stock / ledger" />
+            <img src="assets/images/screens/reports.png" alt="Reports" data-url="softifex / reports / top-sales" />
+            <img src="assets/images/screens/roles.png" alt="Roles" data-url="softifex / users / roles" />
+          </div></div>
+        <div class="theme-sw" id="themeSw"><button class="on" data-t="light"><i class="fas fa-sun"></i> Light</button><button data-t="dark"><i class="fas fa-moon"></i> Dark</button></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== HOW IT WORKS — FIXED PROCESS FLOW ===== -->
-    <section id="how-it-works" class="process-section">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">How It Works</span>
-          <h2 class="section-title">Up and Running in 4 Steps</h2>
-          <p class="section-subtitle">
-            From onboarding to full operation — a smooth, guided path every
-            time.
-          </p>
-        </div>
+<!-- FEATURES BENTO -->
+<section id="features">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">Features</span>
+      <h2 class="title rv">Everything a distributor <em>actually needs</em></h2>
+      <p class="sub rv">Built around batches, expiry, routes and receivables, the things pharma distribution runs on.</p></div>
+    <div class="bento">
+      <div class="bx s4 shot rv"><div class="txt"><div class="ic"><i class="fas fa-gauge-high"></i></div><h3>A dashboard that answers the morning question</h3><p>Today's sales, cash collected, returns and what customers still owe, with charts by day, month or year. Every role sees only the cards it is allowed to.</p></div><img src="assets/images/screens/overview-light.png" alt="" /></div>
+      <div class="bx s2 shot rv d1"><div class="txt"><div class="ic"><i class="fas fa-boxes-stacked"></i></div><h3>Batch and expiry</h3><p>Every sale and stock movement is tracked by batch. Near-expiry and re-order items stand out.</p><div class="tags"><span>Batches</span><span>Expiry</span><span>Re-order</span><span>Narcotics flag</span></div></div><img src="assets/images/screens/ledger.png" alt="" style="object-fit:cover;object-position:left top;max-height:190px" /></div>
+      <div class="bx s2 rv"><div class="ic"><i class="fas fa-percent"></i></div><h3>Discount policy</h3><p>Set discount rules once and they apply on invoices automatically.</p></div>
+      <div class="bx s2 rv d1"><div class="ic"><i class="fas fa-truck-fast"></i></div><h3>Transfers and in-transit</h3><p>Move stock between locations and always know what is on the road.</p></div>
+      <div class="bx s2 rv d2"><div class="ic"><i class="fas fa-file-invoice-dollar"></i></div><h3>Tax invoice</h3><p>Tax invoice settings, including FBR invoicing options.</p></div>
+      <div class="bx s3 rv"><div class="ic"><i class="fas fa-chart-column"></i></div><h3>20+ ready reports</h3><p>Receivables by customer and area, cash summary, product ledger, monthly sales, top sales, stock and re-order and more. Long reports run in the background with progress shown.</p></div>
+      <div class="bx s3 rv d1"><div class="ic"><i class="fas fa-pen-ruler"></i></div><h3>Report designer</h3><p>Shape report layouts to your own needs. Export any list to Excel or PDF in one click.</p></div>
+      <div class="bx s2 rv"><div class="ic"><i class="fas fa-bell"></i></div><h3>Notification system</h3><p>Send announcements to your team. Alerts show in the bell on every page and on the phone.</p></div>
+      <div class="bx s2 rv d1"><div class="ic"><i class="fas fa-magnifying-glass"></i></div><h3>Fast to use</h3><p>Press Alt+K to jump to any page. Search every list. Keyboard shortcuts save clicks.</p></div>
+      <div class="bx s2 rv d2"><div class="ic"><i class="fas fa-circle-half-stroke"></i></div><h3>Light and dark</h3><p>Pick the look that is comfortable for long days.</p></div>
+    </div>
+  </div>
+</section>
 
-        <!-- Desktop: horizontal row -->
-        <div
-          class="d-none d-md-flex process-row"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="process-item">
-            <div class="process-step">
-              <div class="process-step-num">01</div>
-              <h6>Book Demo</h6>
-              <p>
-                Schedule a free live walkthrough tailored to your pharma
-                workflow and business size.
-              </p>
-            </div>
-          </div>
-          <div class="process-item">
-            <div class="process-step">
-              <div class="process-step-num">02</div>
-              <h6>Setup & Configure</h6>
-              <p>
-                Our team installs and configures Softifex on your server or in
-                the cloud within 48 hours.
-              </p>
-            </div>
-          </div>
-          <div class="process-item">
-            <div class="process-step">
-              <div class="process-step-num">03</div>
-              <h6>Team Training</h6>
-              <p>
-                Live onboarding sessions for your staff — inventory, billing,
-                accounting, and mobile app.
-              </p>
-            </div>
-          </div>
-          <div class="process-item">
-            <div class="process-step">
-              <div class="process-step-num">04</div>
-              <h6>Go Live & Scale</h6>
-              <p>
-                Start operations with dedicated support. Scale to more branches
-                or modules anytime.
-              </p>
-            </div>
-          </div>
-        </div>
+<!-- MODULES -->
+<section id="modules">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">Modules</span>
+      <h2 class="title rv">Nine modules. <em>One connected system.</em></h2>
+      <p class="sub rv">Enter a document once and it flows to stock, ledgers and reports.</p></div>
+    <div class="mods">
+      <div class="mod rv"><div class="ic"><i class="fas fa-capsules"></i></div><h3>Products</h3><p>Vendors, vendor groups, divisions, groups, sub groups, products and batches with expiry.</p></div>
+      <div class="mod rv d1"><div class="ic"><i class="fas fa-receipt"></i></div><h3>Sales</h3><p>Invoices, sales returns, discount policy and the customer sales ledger.</p></div>
+      <div class="mod rv d2"><div class="ic"><i class="fas fa-bag-shopping"></i></div><h3>Purchase</h3><p>Purchase orders, purchases, purchase returns and transfers in and out.</p></div>
+      <div class="mod rv"><div class="ic"><i class="fas fa-boxes-stacked"></i></div><h3>Stock</h3><p>Live stock, in-transit stock, shifting between locations and a full stock ledger.</p></div>
+      <div class="mod rv d1"><div class="ic"><i class="fas fa-users"></i></div><h3>Customers and Field</h3><p>Customers, towns, city routes, salesmen and medical representatives.</p></div>
+      <div class="mod rv d2"><div class="ic"><i class="fas fa-building-columns"></i></div><h3>Accounts</h3><p>Chart of accounts, account types and the data ledger for account audit.</p></div>
+      <div class="mod rv"><div class="ic"><i class="fas fa-right-left"></i></div><h3>Transactions</h3><p>Field orders, cash collection, manual cash and voucher posting.</p></div>
+      <div class="mod rv d1"><div class="ic"><i class="fas fa-chart-pie"></i></div><h3>Reports</h3><p>More than 20 ready reports plus a designer for your own layouts.</p></div>
+      <div class="mod rv d2"><div class="ic"><i class="fas fa-gear"></i></div><h3>Administration</h3><p>Users, roles, settings, notifications, tax invoice, and backup and restore.</p></div>
+    </div>
+  </div>
+</section>
 
-        <!-- Mobile: vertical stack -->
-        <div class="d-md-none row g-3 mt-4" data-aos="fade-up">
-          <div class="col-12">
-            <div
-              class="process-step text-start"
-              style="display: flex; align-items: flex-start; gap: 18px"
-            >
-              <div class="process-step-num" style="flex-shrink: 0; margin: 0">
-                01
-              </div>
-              <div>
-                <h6 style="margin-bottom: 6px">Book Demo</h6>
-                <p>
-                  Schedule a free live walkthrough tailored to your pharma
-                  workflow and business size.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div
-              class="process-step text-start"
-              style="display: flex; align-items: flex-start; gap: 18px"
-            >
-              <div class="process-step-num" style="flex-shrink: 0; margin: 0">
-                02
-              </div>
-              <div>
-                <h6 style="margin-bottom: 6px">Setup & Configure</h6>
-                <p>
-                  Our team installs and configures Softifex on your server or
-                  cloud within 48 hours.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div
-              class="process-step text-start"
-              style="display: flex; align-items: flex-start; gap: 18px"
-            >
-              <div class="process-step-num" style="flex-shrink: 0; margin: 0">
-                03
-              </div>
-              <div>
-                <h6 style="margin-bottom: 6px">Team Training</h6>
-                <p>
-                  Live onboarding sessions for your staff — inventory, billing,
-                  accounting, and mobile app.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div
-              class="process-step text-start"
-              style="display: flex; align-items: flex-start; gap: 18px"
-            >
-              <div class="process-step-num" style="flex-shrink: 0; margin: 0">
-                04
-              </div>
-              <div>
-                <h6 style="margin-bottom: 6px">Go Live & Scale</h6>
-                <p>
-                  Start operations with dedicated support. Scale to more
-                  branches or modules anytime.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- MOBILE -->
+<section id="mobile">
+  <div class="wrap mob">
+    <div>
+      <span class="eyebrow rv">Mobile app</span>
+      <h2 class="title rv">Take orders <em>right in the field</em></h2>
+      <p class="sub rv">Your salesmen carry the day in their pocket. Orders, cash and returns are saved on the phone and sent to the office with one tap.</p>
+      <ul>
+        <li class="rv"><i class="fas fa-cart-plus"></i><div><b>Orders in seconds</b><span>Pick the customer, product and batch, enter quantity and price.</span></div></li>
+        <li class="rv d1"><i class="fas fa-wifi"></i><div><b>Weak signal is fine</b><span>Work is stored on the phone, then synced when you are ready.</span></div></li>
+        <li class="rv d1"><i class="fas fa-hand-holding-dollar"></i><div><b>Cash and returns</b><span>Collect payments and record returns on the spot.</span></div></li>
+        <li class="rv d2"><i class="fas fa-fingerprint"></i><div><b>Fingerprint or face unlock</b><span>Keeps the app private if the phone is lost or shared.</span></div></li>
+        <li class="rv d2"><i class="fas fa-chart-simple"></i><div><b>Insights and notifications</b><span>Today against yesterday, the last 7 days, and alerts on the phone.</span></div></li>
+      </ul>
+      <div class="cta-row" style="justify-content:flex-start;margin-top:26px"><a class="btn btn-p" href="#packages">See packages</a></div>
+    </div>
+    <div class="fan rv d1">
+      <div class="phone p1"><img src="assets/images/screens/m-cash.png" alt="Collect cash" /></div>
+      <div class="phone p2"><img src="assets/images/screens/m-home.png" alt="Overview" /></div>
+      <div class="phone p3"><img src="assets/images/screens/m-order.png" alt="New order" /></div>
+      <div class="phone p4"><img src="assets/images/screens/m-insights.png" alt="Insights" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section id="security">
+  <div class="wrap sec">
+    <div class="rv">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>softifex / users / roles</span></div><img src="assets/images/screens/roles.png" alt="Role access matrix" /></div>
+    </div>
+    <div>
+      <span class="eyebrow rv">Security and control</span>
+      <h2 class="title rv">Your data stays yours, <em>and stays safe</em></h2>
+      <ul class="checks">
+        <li class="rv"><i class="fas fa-circle-check"></i><div><b>Role-based access</b><span>Set every page to None, View, Create, Update or Full. Choose which dashboard cards each role sees.</span></div></li>
+        <li class="rv"><i class="fas fa-circle-check"></i><div><b>Protected sign-in</b><span>Account lockout after repeated wrong attempts, with managed sessions.</span></div></li>
+        <li class="rv"><i class="fas fa-circle-check"></i><div><b>Encrypted backups</b><span>Manual or automatic daily, every 3 days or weekly, with your choice of retention, and easy restore.</span></div></li>
+        <li class="rv"><i class="fas fa-circle-check"></i><div><b>Tamper alerts</b><span>Administrators are warned when security records need attention, with a recovery console to repair them.</span></div></li>
+        <li class="rv"><i class="fas fa-circle-check"></i><div><b>Ledgers for audit</b><span>Data, sales and stock ledgers trace every entry.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EASY -->
+<section id="easy">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">Made easy</span>
+      <h2 class="title rv">Simple to install, <em>simple to keep running</em></h2>
+      <p class="sub rv">We care about what happens after the demo.</p></div>
+    <div class="easy">
+      <div class="bx rv"><div class="ic"><i class="fas fa-download"></i></div><h3>Easy installation</h3><p>A guided installer sets up the software step by step.</p></div>
+      <div class="bx rv d1"><div class="ic"><i class="fas fa-rotate"></i></div><h3>Simple updates</h3><p>Updates apply in a few steps and your data stays exactly as it was.</p></div>
+      <div class="bx rv d2"><div class="ic"><i class="fas fa-screwdriver-wrench"></i></div><h3>Low maintenance</h3><p>Automatic backups run quietly in the background.</p></div>
+      <div class="bx rv d3"><div class="ic"><i class="fas fa-headset"></i></div><h3>Friendly support</h3><p>Help is one click away inside the software, by email or WhatsApp.</p></div>
+      <div class="bx rv"><div class="ic"><i class="fas fa-file-import"></i></div><h3>Move in easily</h3><p>Bring lists in from CSV and opening balances from your old system.</p></div>
+      <div class="bx rv d1"><div class="ic"><i class="fas fa-file-export"></i></div><h3>Export anything</h3><p>Send lists and reports to Excel or PDF.</p></div>
+      <div class="bx rv d2"><div class="ic"><i class="fas fa-bell"></i></div><h3>Notifications</h3><p>Announce to staff and see alerts on web and phone.</p></div>
+      <div class="bx rv d3"><div class="ic"><i class="fas fa-bolt"></i></div><h3>Quick lookups</h3><p>Find any page or record in a keystroke.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">Packages</span>
+      <h2 class="title rv">Choose what <em>fits your business</em></h2>
+      <p class="sub rv">Tell us about your team and we will suggest the right package.</p></div>
+    <div class="pk">
+      <div class="pack rv"><h3>Software Only</h3><div class="for">For the office and warehouse</div>
+        <ul><li><i class="fas fa-check"></i>All nine modules</li><li><i class="fas fa-check"></i>Dashboard and 20+ reports</li><li><i class="fas fa-check"></i>Roles, access control and security</li><li><i class="fas fa-check"></i>Scheduled encrypted backups</li><li><i class="fas fa-check"></i>Notification system</li><li><i class="fas fa-check"></i>Installation and update support</li></ul>
+        <a class="btn btn-g" href="#demo">Contact us for price</a></div>
+      <div class="pack hot rv d1"><span class="badge">Most complete</span><h3>Software + Mobile App</h3><div class="for">For the office and your field force</div>
+        <ul><li><i class="fas fa-check"></i>Everything in Software Only</li><li><i class="fas fa-check"></i>Mobile app for salesmen</li><li><i class="fas fa-check"></i>Orders, cash and returns from the field</li><li><i class="fas fa-check"></i>Sync with the office in one tap</li><li><i class="fas fa-check"></i>Fingerprint and face unlock</li><li><i class="fas fa-check"></i>Phone notifications and insights</li></ul>
+        <a class="btn btn-p" href="#demo">Contact us for price</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow rv">FAQ</span><h2 class="title rv">Questions we <em>often hear</em></h2></div>
+    <div class="faq">
+      <div class="fi rv"><button class="fq">Is the mobile app included?<i class="fas fa-plus"></i></button><div class="fi-a"><p>It is part of the "Software + Mobile App" package. The "Software Only" package covers the office and warehouse.</p></div></div>
+      <div class="fi rv"><button class="fq">Does the app work with a weak connection?<i class="fas fa-plus"></i></button><div class="fi-a"><p>Yes. Orders, cash and returns are saved on the phone first and sent to the office when you tap sync.</p></div></div>
+      <div class="fi rv"><button class="fq">Can different staff see different things?<i class="fas fa-plus"></i></button><div class="fi-a"><p>Yes. Every page can be set to None, View, Create, Update or Full for each role, and dashboard cards can be switched on or off per role.</p></div></div>
+      <div class="fi rv"><button class="fq">Can I bring in my existing data?<i class="fas fa-plus"></i></button><div class="fi-a"><p>Yes. Lists can be imported from CSV, and opening balances can be moved in from your old system.</p></div></div>
+      <div class="fi rv"><button class="fq">How are updates handled?<i class="fas fa-plus"></i></button><div class="fi-a"><p>Updates are applied in a few simple steps and your data stays as it was. Automatic backups keep a safety copy on your schedule.</p></div></div>
+      <div class="fi rv"><button class="fq">What does it cost?<i class="fas fa-plus"></i></button><div class="fi-a"><p>It depends on your package and team size. Contact us using the form below or on WhatsApp and we will reply with a price.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO + CONTACT -->
+<section id="demo">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:50px"><span class="eyebrow rv">Free demo</span><h2 class="title rv">See Softifex <em>working for your business</em></h2><p class="sub rv">Ask for a demo, a package suggestion or a price. We reply quickly.</p></div>
+    <div class="contact">
+      <div class="rv">
+        <div class="dev"><div class="av">MZ</div><div><b style="font-size:1.25rem">Muhammad Zayem</b><div style="color:var(--muted)">Developer, Techstersol Ltd</div></div></div>
+        <a class="ci wa" href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I%27m%20interested%20in%20Softifex%20ERP%20demo" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><div><small>WhatsApp - tap to chat</small><b>+92 306 6940981</b></div></a>
+        <a class="ci" href="mailto:support@techstersol.com"><i class="fas fa-envelope"></i><div><small>Email</small><b>support@techstersol.com</b></div></a>
+        <a class="ci" href="https://softifex.techstersol.com/" target="_blank" rel="noopener"><i class="fas fa-globe"></i><div><small>Softifex</small><b>softifex.techstersol.com</b></div></a>
+        <a class="ci" href="https://techstersol.com/" target="_blank" rel="noopener"><i class="fas fa-building"></i><div><small>Company</small><b>techstersol.com</b></div></a>
+        <a class="ci" href="downloads/Softifex-Brochure.pdf" download><i class="fas fa-file-pdf"></i><div><small>Brochure</small><b>Download the PDF</b></div></a>
       </div>
-    </section>
-
-    <!-- ===================== MODULES ===================== -->
-    <section id="modules" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">System Modules</span>
-          <h2 class="section-title">10 Powerful Modules</h2>
-          <p class="section-subtitle">
-            A complete pharmaceutical business ecosystem, deeply integrated and
-            purpose-built for efficiency.
-          </p>
+      <form class="form rv d1" action="Database.php" method="post" id="demoForm">
+        <h3>Book your free demo</h3><p>Tell us a little about your business.</p>
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" />
+        <div class="fg">
+          <div><label>Your name</label><input type="text" name="name" placeholder="Muhammad Ali" required /></div>
+          <div><label>Company name</label><input type="text" name="subject" placeholder="Al-Noor Pharmaceuticals" required /></div>
+          <div><label>Phone number</label><input type="tel" name="phone" placeholder="+92 300 0000000" /></div>
+          <div><label>Email address</label><input type="email" name="email" placeholder="you@company.com" required /></div>
+          <div class="full"><label>Message</label><textarea name="message" placeholder="Business size, what you need, which package interests you..." required></textarea></div>
+          <div class="full"><button type="submit" class="btn btn-p"><i class="fas fa-paper-plane"></i> Send request</button></div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="module-card-3d">
-              <span class="module-num">01</span>
-              <div class="module-icon"><i class="fas fa-boxes"></i></div>
-              <h5>Inventory Management</h5>
-              <p>
-                Real-time stock levels, reorder automation, variance reports,
-                and batch traceability.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">02</span>
-              <div class="module-icon"><i class="fas fa-shopping-bag"></i></div>
-              <h5>Purchase Management</h5>
-              <p>
-                POs, GRNs, purchase returns, supplier invoices, and payable
-                management.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">03</span>
-              <div class="module-icon"><i class="fas fa-chart-line"></i></div>
-              <h5>Sales Management</h5>
-              <p>
-                Invoicing, credit notes, return handling, salesman targets, and
-                commission tracking.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">04</span>
-              <div class="module-icon">
-                <i class="fas fa-balance-scale"></i>
-              </div>
-              <h5>Accounting System</h5>
-              <p>
-                Chart of accounts, journal entries, trial balance, P&L, and
-                balance sheet.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">05</span>
-              <div class="module-icon"><i class="fas fa-file-alt"></i></div>
-              <h5>Reporting Engine</h5>
-              <p>
-                50+ parameterized reports covering every business dimension —
-                export ready.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">06</span>
-              <div class="module-icon"><i class="fas fa-mobile-alt"></i></div>
-              <h5>Mobile Booking System</h5>
-              <p>
-                PWA-based fast mobile app for area-wise salesman order booking
-                and sync.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="module-card-3d">
-              <span class="module-num">07</span>
-              <div class="module-icon"><i class="fas fa-map"></i></div>
-              <h5>Area Management</h5>
-              <p>
-                Define territories, assign salesmen, and track route-wise
-                customer coverage.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">08</span>
-              <div class="module-icon"><i class="fas fa-user-md"></i></div>
-              <h5>Medical Rep Management</h5>
-              <p>
-                Doctor detailing, sample distribution, target vs. achievement
-                reporting for MRs.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">09</span>
-              <div class="module-icon"><i class="fas fa-user-friends"></i></div>
-              <h5>Customer Management</h5>
-              <p>
-                Full 360° customer profile with order history, balance, and
-                loyalty tracking.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 offset-lg-1"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="module-card-3d">
-              <span class="module-num">10</span>
-              <div class="module-icon"><i class="fas fa-industry"></i></div>
-              <h5>Vendor Management</h5>
-              <p>
-                Supplier scorecards, payment scheduling, and purchase
-                performance analytics.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </form>
+    </div>
+  </div>
+</section>
 
-    <!-- ===================== MOBILE APP ===================== -->
-    <section id="mobile-app" class="section-pad">
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
-            <span class="section-eyebrow">Mobile Booking App</span>
-            <h2 class="section-title" style="text-align: left">
-              Fast Booking.<br />Anywhere. Anytime.
-            </h2>
-            <p
-              style="
-                color: var(--text-muted);
-                font-size: 0.95rem;
-                line-height: 1.8;
-                margin-bottom: 32px;
-              "
-            >
-              A lightweight, blazing-fast web-based mobile app designed
-              specifically for pharmaceutical salesmen. Books orders offline,
-              syncs instantly — no Play Store required.
-            </p>
-            <ul class="mobile-features-list">
-              <li>
-                <div class="mf-icon"><i class="fas fa-map-pin"></i></div>
-                <div>
-                  <strong>Area Wise Salesman Booking</strong> — Assign beats and
-                  manage daily routes efficiently.
-                </div>
-              </li>
-              <li>
-                <div class="mf-icon"><i class="fas fa-route"></i></div>
-                <div>
-                  <strong>Customer Visits & Route Management</strong> — Log
-                  calls, visits, and orders per customer.
-                </div>
-              </li>
-              <li>
-                <div class="mf-icon"><i class="fas fa-eye"></i></div>
-                <div>
-                  <strong>Live Stock Visibility</strong> — Salesmen see
-                  real-time availability before confirming orders.
-                </div>
-              </li>
-              <li>
-                <div class="mf-icon"><i class="fas fa-bolt"></i></div>
-                <div>
-                  <strong>Real Time Orders & Offline Booking</strong> — Works
-                  without internet, syncs on reconnect.
-                </div>
-              </li>
-              <li>
-                <div class="mf-icon"><i class="fas fa-sync-alt"></i></div>
-                <div>
-                  <strong>Instant Synchronization</strong> — Data flows to the
-                  main ERP the moment connection restores.
-                </div>
-              </li>
-              <li>
-                <div class="mf-icon"><i class="fas fa-chart-pie"></i></div>
-                <div>
-                  <strong>Route Wise Sales Tracking</strong> — See sales
-                  performance per route, per day.
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <div class="phone-mockup-wrap" style="height: 480px">
-              <div class="phone-mockup">
-                <div class="phone-screen">
-                  <div class="phone-header">📦 Softifex Mobile</div>
-                  <div class="phone-card">
-                    <i class="fas fa-map-marker-alt"></i> Area: Defence, Lahore
-                  </div>
-                  <div class="phone-card">
-                    <i class="fas fa-user"></i> Salesman: Usman Ali
-                  </div>
-                  <div class="phone-card">
-                    <i class="fas fa-boxes"></i> 3 Orders Pending
-                  </div>
-                  <div class="phone-card">
-                    <i class="fas fa-wifi-slash"></i> Offline — 2 Queued
-                  </div>
-                  <div class="phone-card">
-                    <i class="fas fa-sync"></i> Last Sync: 11:42 AM
-                  </div>
-                  <div
-                    style="
-                      margin-top: 10px;
-                      background: linear-gradient(
-                        135deg,
-                        var(--primary-light),
-                        var(--accent)
-                      );
-                      border-radius: 8px;
-                      padding: 8px;
-                      text-align: center;
-                      font-size: 0.65rem;
-                      font-weight: 700;
-                      color: #fff;
-                    "
-                  >
-                    + New Order
-                  </div>
-                </div>
-              </div>
-              <div class="phone-mockup-2">
-                <div
-                  style="
-                    position: absolute;
-                    inset: 20px 8px 8px;
-                    background: linear-gradient(180deg, #0a1f4a, #061228);
-                    border-radius: 24px;
-                    padding: 16px 10px;
-                    overflow: hidden;
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 0.6rem;
-                      color: var(--accent);
-                      font-weight: 700;
-                      margin-bottom: 10px;
-                    "
-                  >
-                    📊 Today's Summary
-                  </div>
-                  <div
-                    style="
-                      background: rgba(41, 121, 255, 0.12);
-                      border-radius: 8px;
-                      padding: 6px 8px;
-                      margin-bottom: 6px;
-                      font-size: 0.58rem;
-                      color: var(--text);
-                    "
-                  >
-                    Orders: <strong>14</strong>
-                  </div>
-                  <div
-                    style="
-                      background: rgba(41, 121, 255, 0.12);
-                      border-radius: 8px;
-                      padding: 6px 8px;
-                      margin-bottom: 6px;
-                      font-size: 0.58rem;
-                      color: var(--text);
-                    "
-                  >
-                    Revenue: <strong>₨ 87,500</strong>
-                  </div>
-                  <div
-                    style="
-                      background: rgba(37, 211, 102, 0.1);
-                      border-radius: 8px;
-                      padding: 6px 8px;
-                      font-size: 0.58rem;
-                      color: #6ee7a0;
-                    "
-                  >
-                    ✓ Synced
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===================== PRICING ===================== -->
-    <section id="pricing" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">Pricing Plans</span>
-          <h2 class="section-title">Tailored For Your Scale</h2>
-          <p class="section-subtitle">
-            Every business is different. We price accordingly — contact us and
-            we'll build the right package.
-          </p>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="pricing-card">
-              <div class="plan-name">Starter</div>
-              <div class="plan-price">Contact Us</div>
-              <div class="plan-sub">
-                For single-branch pharmacies & medical stores
-              </div>
-              <ul class="plan-features">
-                <li>
-                  <i class="fas fa-check-circle"></i> Inventory & Sales Module
-                </li>
-                <li><i class="fas fa-check-circle"></i> Purchase Management</li>
-                <li><i class="fas fa-check-circle"></i> Basic Accounting</li>
-                <li><i class="fas fa-check-circle"></i> Standard Reports</li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Installation Support
-                </li>
-                <li><i class="fas fa-check-circle"></i> Training Included</li>
-              </ul>
-              <a
-                href="#demo"
-                class="btn-ghost"
-                style="width: 100%; justify-content: center"
-                >Request Pricing</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="pricing-card featured">
-              <div class="plan-badge">Most Popular</div>
-              <div class="plan-name">Business</div>
-              <div class="plan-price">Contact Us</div>
-              <div class="plan-sub">For distributors & wholesale dealers</div>
-              <ul class="plan-features">
-                <li>
-                  <i class="fas fa-check-circle"></i> All Starter Features
-                </li>
-                <li><i class="fas fa-check-circle"></i> Mobile Booking App</li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Area & MR Management
-                </li>
-                <li><i class="fas fa-check-circle"></i> GST & Tax Reporting</li>
-                <li><i class="fas fa-check-circle"></i> Custom Reports</li>
-                <li><i class="fas fa-check-circle"></i> Dedicated Support</li>
-              </ul>
-              <a
-                href="#demo"
-                class="btn-primary-glow"
-                style="width: 100%; justify-content: center"
-                >Request Pricing</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <div class="pricing-card">
-              <div class="plan-name">Enterprise</div>
-              <div class="plan-price">Contact Us</div>
-              <div class="plan-sub">For multi-branch pharma distributors</div>
-              <ul class="plan-features">
-                <li>
-                  <i class="fas fa-check-circle"></i> All Business Features
-                </li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Multi Branch Support
-                </li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Offline Sync Support
-                </li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Custom Tailored Solutions
-                </li>
-                <li><i class="fas fa-check-circle"></i> Role Based Security</li>
-                <li>
-                  <i class="fas fa-check-circle"></i> Priority Dedicated Support
-                </li>
-              </ul>
-              <a
-                href="#demo"
-                class="btn-ghost"
-                style="width: 100%; justify-content: center"
-                >Request Pricing</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- CTA -->
+<section style="padding:30px 0 60px">
+  <div class="wrap"><div class="ctab rv"><h2>Ready to run on Softifex?</h2><p>Start with a free demo. No commitment.</p>
+    <div class="cta-row"><a class="btn btn-p" href="#demo" style="background:#fff;color:#0f2742;box-shadow:none"><i class="fas fa-calendar-check"></i> Book a free demo</a><a class="btn btn-g" href="downloads/Softifex-Brochure.pdf" download><i class="fas fa-file-arrow-down"></i> Download brochure</a></div></div></div>
+</section>
 
-    <!-- ===================== DEMO FORM ===================== -->
-    <section id="demo" class="section-pad">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="demo-wrap">
-              <div class="text-center mb-5">
-                <span class="section-eyebrow">Free Demonstration</span>
-                <h2 class="section-title">Book Your Free Demo</h2>
-                <p class="section-subtitle">
-                  See Softifex in action. Our team will walk you through every
-                  module tailored to your business needs.
-                </p>
-              </div>
-              <form action="Database.php" method="post" id="demoForm">
-                <input
-                  type="text"
-                  name="website"
-                  class="hp-field"
-                  tabindex="-1"
-                  autocomplete="off"
-                />
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control-custom"
-                      placeholder="Muhammad Ali"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Company Name</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      class="form-control-custom"
-                      placeholder="Al-Noor Pharmaceuticals"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Phone Number</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      class="form-control-custom"
-                      placeholder="+92 300 0000000"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Email Address</label>
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control-custom"
-                      placeholder="you@company.com"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label-custom">Message</label>
-                    <textarea
-                      name="message"
-                      class="form-control-custom"
-                      placeholder="Tell us about your business size, current challenges, and what you're looking for..."
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12 text-center">
-                    <button
-                      type="submit"
-                      class="btn-primary-glow"
-                      style="padding: 16px 48px; font-size: 1rem"
-                    >
-                      <i class="fas fa-calendar-check"></i> Book Free Demo Now
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="brand" href="#hero"><img src="assets/images/Softifex-white.png" alt="Softifex" /></a><p>Pharma distribution software with a mobile order-taking app. A product of Techstersol Ltd.</p></div>
+      <div><h4>Product</h4><ul><li><a href="#tour">Tour</a></li><li><a href="#features">Features</a></li><li><a href="#modules">Modules</a></li><li><a href="#mobile">Mobile app</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#security">Security</a></li><li><a href="#packages">Packages</a></li><li><a href="#faq">FAQ</a></li><li><a href="downloads/Softifex-Brochure.pdf" download>Brochure</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I%27m%20interested%20in%20Softifex%20ERP%20demo" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:support@techstersol.com">support@techstersol.com</a></li><li><a href="https://techstersol.com/" target="_blank" rel="noopener">techstersol.com</a></li></ul></div>
+    </div>
+    <div class="copy"><span>&copy; 2026 Softifex. Product of Techstersol Ltd.</span><span>Developed by Muhammad Zayem</span></div>
+  </div>
+</footer>
 
-    <!-- ===================== CONTACT ===================== -->
-    <section id="contact" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">Get In Touch</span>
-          <h2 class="section-title">We're Here To Help</h2>
-          <p class="section-subtitle">
-            Have questions? Reach out directly — our team typically responds
-            within an hour.
-          </p>
-        </div>
-        <div class="row g-4 justify-content-center mb-5">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="contact-card">
-              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <h6>Call Us</h6>
-                <a href="tel:+923066940981">+92 306 6940981</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="contact-card">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <h6>Email Us</h6>
-                <a href="mailto:zayem@techstersol.com">zayem@techstersol.com</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="contact-card">
-              <div
-                class="contact-icon"
-                style="
-                  background: rgba(37, 211, 102, 0.1);
-                  border-color: rgba(37, 211, 102, 0.3);
-                "
-              >
-                <i class="fab fa-whatsapp" style="color: #25d366"></i>
-              </div>
-              <div>
-                <h6>WhatsApp</h6>
-                <a
-                  href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I'm%20interested%20in%20Softifex%20ERP!"
-                  target="_blank"
-                  >Chat on WhatsApp</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center" data-aos="fade-up">
-          <a
-            href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I'm%20interested%20in%20Softifex%20ERP!"
-            target="_blank"
-            class="whatsapp-btn"
-          >
-            <i class="fab fa-whatsapp fa-lg"></i> Chat on WhatsApp Now
-          </a>
-        </div>
-      </div>
-    </section>
+<a class="wafab" href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I%27m%20interested%20in%20Softifex%20ERP%20demo" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- ===================== TESTIMONIALS ===================== -->
-    <section id="testimonials" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">Client Stories</span>
-          <h2 class="section-title">Trusted by Pharma Businesses</h2>
-          <p class="section-subtitle">
-            Real results from real pharmaceutical businesses across Pakistan.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-text">
-                Softifex transformed our stock management completely. Batch
-                tracking and expiry alerts alone saved us thousands in
-                write-offs every month. Outstanding system.
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">A</div>
-                <div>
-                  <div class="author-name">Ahmed Raza</div>
-                  <div class="author-role">
-                    Pharmaceutical Distributor, Lahore
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-text">
-                The mobile booking app is a game changer. Our salesmen book
-                orders from customers in the field, and everything syncs
-                instantly. We cut order processing time by 60%.
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">F</div>
-                <div>
-                  <div class="author-name">Farhan Siddiqui</div>
-                  <div class="author-role">Medical Store Owner, Karachi</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-text">
-                GST reporting used to take us two days every month. With
-                Softifex it's done in 20 minutes. The accounting integration is
-                seamless. Techstersol delivered exactly what they promised.
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">S</div>
-                <div>
-                  <div class="author-name">Salman Malik</div>
-                  <div class="author-role">Wholesale Dealer, Faisalabad</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FAQ ===================== -->
-    <section id="faq" class="section-pad">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <span class="section-eyebrow">Common Questions</span>
-          <h2 class="section-title">Frequently Asked</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="faq-item">
-              <div class="faq-question">
-                Is Softifex cloud-based or installed locally?<span
-                  class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                Softifex is a web-based ERP — accessible from any browser. It
-                can be deployed on your own server (on-premise) or hosted in the
-                cloud depending on your preference and infrastructure setup.
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                Does it support mobile booking for salesmen?<span
-                  class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                Yes. Softifex includes a dedicated fast web-based mobile booking
-                app for salesmen. It works offline, syncs in real time, and
-                supports area-wise routing, customer visits, live stock checks,
-                and order placement.
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                Can it manage batch-wise inventory and expiry?<span
-                  class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                Absolutely. Batch-wise stock tracking with FEFO/FIFO support,
-                expiry date alerts, near-expiry reports, and batch hold
-                management are core features — essential for pharmaceutical
-                compliance.
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                Does Softifex include full accounting?<span class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                Yes. The accounting module covers double-entry bookkeeping,
-                chart of accounts, journal vouchers, cash/bank management, trial
-                balance, P&L statement, and balance sheet — plus GST-ready tax
-                reporting.
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                Is customization available for specific workflows?<span
-                  class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                Yes. Techstersol provides custom development for unique business
-                workflows, custom reports, and integrations. Enterprise plan
-                clients get fully tailored solutions as part of the package.
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                Do you provide training and ongoing support?<span
-                  class="faq-icon"
-                  ><i class="fas fa-plus"></i
-                ></span>
-              </div>
-              <div class="faq-answer">
-                All plans include comprehensive onboarding training for your
-                team. Ongoing support is available via WhatsApp, phone, and
-                email. Enterprise clients receive dedicated support with
-                priority response SLAs.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FINAL CTA ===================== -->
-    <section id="cta-section">
-      <div class="container text-center" data-aos="fade-up">
-        <span class="section-eyebrow">Get Started Today</span>
-        <h2 class="cta-title">
-          Ready To Transform Your<br />Pharmaceutical Business?
-        </h2>
-        <p class="cta-sub">
-          Join pharmaceutical businesses across Pakistan already running on
-          Softifex. Start with a free demo — no commitment required.
-        </p>
-        <div class="d-flex flex-wrap gap-3 justify-content-center">
-          <a
-            href="#demo"
-            class="btn-primary-glow"
-            style="font-size: 1.05rem; padding: 16px 44px"
-          >
-            <i class="fas fa-calendar-check"></i> Book Free Demo
-          </a>
-          <a
-            href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I'm%20interested%20in%20Softifex%20ERP!"
-            target="_blank"
-            class="whatsapp-btn"
-          >
-            <i class="fab fa-whatsapp"></i> Contact Us
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer>
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <div class="footer-logo">
-              <div class="logo-icon">
-                <img src="assets/images/icon.png" alt="Softifex Systems Logo" />
-              </div>
-              <span
-                ><span style="color: #fff">Soft</span
-                ><span style="color: var(--accent2)">ifex</span></span
-              >
-            </div>
-            <p class="footer-desc">
-              Softifex Systems — A comprehensive Pharmaceutical ERP built for
-              distributors, and wholesalers.
-            </p>
-            <div class="footer-social">
-              <a
-                href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I'm%20interested%20in%20Softifex%20ERP!"
-                target="_blank"
-                class="social-btn"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-              <a href="mailto:zayem@techstersol.com" class="social-btn"
-                ><i class="fas fa-envelope"></i
-              ></a>
-              <a href="tel:+923066940981" class="social-btn"
-                ><i class="fas fa-phone"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/muhammad-zayem/"
-                class="social-btn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-2">
-            <div class="footer-heading">Quick Links</div>
-            <ul class="footer-links">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#modules">Modules</a></li>
-              <li><a href="#mobile-app">Mobile App</a></li>
-              <li><a href="#how-it-works">How It Works</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#demo">Book Demo</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="footer-heading">Modules</div>
-            <ul class="footer-links">
-              <li><a href="#modules">Inventory Management</a></li>
-              <li><a href="#modules">Sales Management</a></li>
-              <li><a href="#modules">Purchase Management</a></li>
-              <li><a href="#modules">Accounting System</a></li>
-              <li><a href="#modules">Mobile Booking</a></li>
-              <li><a href="#modules">Reporting Engine</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-heading">Contact</div>
-            <ul class="footer-links">
-              <li>
-                <a href="tel:+923066940981"
-                  ><i
-                    class="fas fa-phone fa-md"
-                    style="color: var(--accent)"
-                  ></i>
-                  +92 306 6940981</a
-                >
-              </li>
-              <li>
-                <a href="mailto:zayem@techstersol.com"
-                  ><i
-                    class="fas fa-envelope fa-md"
-                    style="color: var(--accent)"
-                  ></i>
-                  zayem@techstersol.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/923066940981?text=Hi%20Zayem%2C%20I'm%20interested%20in%20Softifex%20ERP!"
-                  target="_blank"
-                  ><i class="fab fa-whatsapp fa-md" style="color: #25d366"></i>
-                  WhatsApp Chat</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr class="footer-divider" />
-        <div class="footer-bottom">
-          <span>© 2026 Softifex Systems. All Rights Reserved.</span>
-          <span
-            >Powered by
-            <strong
-              ><a href="https://techstersol.com" target="_blank"
-                >Techstersol</a
-              ></strong
-            >
-            &nbsp;|&nbsp; Developed by
-            <strong
-              ><a href="https://github.com/mzayem/" target="_blank"
-                >Muhammad Zayem</a
-              ></strong
-            ></span
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!-- ===================== SCRIPTS ===================== -->
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <script>
-      // ===================== THREE.JS BACKGROUND =====================
-      (function () {
-        const canvas = document.getElementById("bg-canvas");
-        const renderer = new THREE.WebGLRenderer({
-          canvas,
-          alpha: true,
-          antialias: true,
-        });
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setSize(window.innerWidth, window.innerHeight);
-
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(
-          60,
-          window.innerWidth / window.innerHeight,
-          0.1,
-          200,
-        );
-        camera.position.z = 50;
-
-        // Particle field
-        const count = 1200;
-        const positions = new Float32Array(count * 3);
-        for (let i = 0; i < count; i++) {
-          positions[i * 3] = (Math.random() - 0.5) * 200;
-          positions[i * 3 + 1] = (Math.random() - 0.5) * 200;
-          positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
-        }
-        const geo = new THREE.BufferGeometry();
-        geo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-        const mat = new THREE.PointsMaterial({
-          size: 0.25,
-          color: 0x2979ff,
-          transparent: true,
-          opacity: 0.6,
-          sizeAttenuation: true,
-        });
-        const particles = new THREE.Points(geo, mat);
-        scene.add(particles);
-
-        // Torus rings
-        function makeRing(r, tube, color, x, y, z) {
-          const g = new THREE.TorusGeometry(r, tube, 16, 80);
-          const m = new THREE.MeshBasicMaterial({
-            color,
-            wireframe: true,
-            transparent: true,
-            opacity: 0.08,
-          });
-          const mesh = new THREE.Mesh(g, m);
-          mesh.position.set(x, y, z);
-          scene.add(mesh);
-          return mesh;
-        }
-        const ring1 = makeRing(18, 0.08, 0x1a5fd4, -20, 5, -30);
-        const ring2 = makeRing(12, 0.06, 0x00c6ff, 20, -10, -20);
-        const ring3 = makeRing(8, 0.04, 0x2979ff, 5, 15, -15);
-
-        let scrollY = 0;
-        window.addEventListener("scroll", () => {
-          scrollY = window.scrollY;
-        });
-
-        let t = 0;
-        function animate() {
-          requestAnimationFrame(animate);
-          t += 0.004;
-          particles.rotation.y = t * 0.05;
-          particles.rotation.x = t * 0.02;
-          ring1.rotation.x = t * 0.3;
-          ring1.rotation.y = t * 0.2;
-          ring2.rotation.x = -t * 0.2;
-          ring2.rotation.z = t * 0.15;
-          ring3.rotation.y = t * 0.4;
-          camera.position.y = scrollY * -0.008;
-          renderer.render(scene, camera);
-        }
-        animate();
-
-        window.addEventListener("resize", () => {
-          camera.aspect = window.innerWidth / window.innerHeight;
-          camera.updateProjectionMatrix();
-          renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-      })();
-
-      // ===== TERMINAL ANIMATION =====
-      (function () {
-        const lines = [
-          {
-            type: "cmd",
-            prompt: "❯",
-            text: "softifex init --module inventory",
-          },
-          { type: "out", text: "  Connecting to database..." },
-          { type: "success", text: "  ✓ Database connected  [2ms]" },
-          { type: "cmd", prompt: "❯", text: "sync --batch-track --fefo" },
-          { type: "key-val", key: "  batch_count:", val: " 24,850" },
-          { type: "key-val", key: "  expiry_alerts:", val: " 3 near-expiry" },
-          { type: "success", text: "  ✓ Inventory synced    [14ms]" },
-          { type: "cmd", prompt: "❯", text: "sales report --today --area=LHR" },
-          { type: "key-val", key: "  orders:", val: " 142" },
-          { type: "key-val", key: "  revenue:", val: " ₨ 2,48,500" },
-          { type: "key-val", key: "  growth:", val: " ↑ 38%" },
-          { type: "success", text: "  ✓ Report generated   [6ms]" },
-          { type: "cmd", prompt: "❯", text: "" },
-        ];
-
-        const body = document.getElementById("terminal-body");
-        let idx = 0;
-
-        function addLine(line) {
-          const div = document.createElement("div");
-          div.className = "t-line";
-
-          if (line.type === "cmd") {
-            div.innerHTML = `<span class="t-prompt">${line.prompt}</span><span class="t-cmd">${line.text}${idx === lines.length - 1 ? '<span class="t-cursor"></span>' : ""}</span>`;
-          } else if (line.type === "out") {
-            div.innerHTML = `<span class="t-output">${line.text}</span>`;
-          } else if (line.type === "success") {
-            div.innerHTML = `<span class="t-success">${line.text}</span>`;
-          } else if (line.type === "key-val") {
-            div.innerHTML = `<span class="t-output"><span class="t-key">${line.key}</span><span class="t-val">${line.val}</span></span>`;
-          }
-
-          body.appendChild(div);
-          body.scrollTop = body.scrollHeight;
-        }
-
-        function typeLines() {
-          if (idx < lines.length) {
-            addLine(lines[idx]);
-            idx++;
-            const delay = lines[idx - 1].type === "cmd" ? 420 : 160;
-            setTimeout(typeLines, delay);
-          } else {
-            // Loop after pause
-            setTimeout(() => {
-              body.innerHTML = "";
-              idx = 0;
-              typeLines();
-            }, 4000);
-          }
-        }
-
-        setTimeout(typeLines, 1400);
-
-        // SaaS dashboard metrics
-        const metricsData = [
-          { orders: "142", stock: "24.8K", rev: "₨2.4L" },
-          { orders: "158", stock: "24.6K", rev: "₨2.7L" },
-          { orders: "134", stock: "25.1K", rev: "₨2.2L" },
-          { orders: "167", stock: "24.3K", rev: "₨2.9L" },
-        ];
-        let mIdx = 0;
-
-        const barHeights = [30, 55, 45, 70, 40, 85, 60, 75, 50, 65, 90, 72];
-        const chartEl = document.getElementById("mini-chart");
-        barHeights.forEach((h, i) => {
-          const bar = document.createElement("div");
-          bar.className =
-            "mini-bar" + (i === barHeights.length - 1 ? " active" : "");
-          bar.style.height = h + "%";
-          chartEl.appendChild(bar);
-        });
-
-        function updateMetrics() {
-          const d = metricsData[mIdx % metricsData.length];
-          const animate = (el, val) => {
-            el.style.opacity = "0";
-            el.style.transform = "translateY(4px)";
-            setTimeout(() => {
-              el.textContent = val;
-              el.style.transition = "all 0.3s ease";
-              el.style.opacity = "1";
-              el.style.transform = "translateY(0)";
-            }, 150);
-          };
-          animate(document.getElementById("m-orders"), d.orders);
-          animate(document.getElementById("m-stock"), d.stock);
-          animate(document.getElementById("m-rev"), d.rev);
-          mIdx++;
-        }
-        updateMetrics();
-        setInterval(updateMetrics, 3000);
-
-        // Animate bars occasionally
-        setInterval(() => {
-          const bars = chartEl.querySelectorAll(".mini-bar");
-          bars.forEach((b) => b.classList.remove("active"));
-          const rand = Math.floor(Math.random() * bars.length);
-          bars[rand].classList.add("active");
-        }, 1500);
-      })();
-
-      // ===================== NAVBAR SCROLL =====================
-      window.addEventListener("scroll", () => {
-        const nav = document.getElementById("navbar");
-        nav.classList.toggle("scrolled", window.scrollY > 40);
-      });
-
-      // ===================== AOS =====================
-      AOS.init({
-        duration: 800,
-        easing: "ease-out-cubic",
-        once: true,
-        offset: 60,
-      });
-
-      // ===================== GSAP HERO =====================
-      gsap.registerPlugin(ScrollTrigger);
-
-      // Counter animation
-      function animateCounters() {
-        document.querySelectorAll(".stat-number[data-target]").forEach((el) => {
-          const target = +el.dataset.target;
-          const suffix = target === 99 ? "%" : target >= 500 ? "+" : "+";
-          let current = 0;
-          const step = Math.ceil(target / 60);
-          const interval = setInterval(() => {
-            current = Math.min(current + step, target);
-            el.textContent = current + suffix;
-            if (current >= target) clearInterval(interval);
-          }, 30);
-        });
-      }
-      setTimeout(animateCounters, 1200);
-
-      // ===================== FAQ =====================
-      document.querySelectorAll(".faq-question").forEach((q) => {
-        q.addEventListener("click", () => {
-          const item = q.parentElement;
-          const isOpen = item.classList.contains("open");
-          document
-            .querySelectorAll(".faq-item.open")
-            .forEach((i) => i.classList.remove("open"));
-          if (!isOpen) item.classList.add("open");
-        });
-      });
-
-      // ===================== GSAP PARALLAX =====================
-      gsap.to(".hero-glow", {
-        y: -100,
-        scrollTrigger: { trigger: "#hero", scrub: true },
-      });
-
-      // ===================== SMOOTH SCROLL =====================
-      document.querySelectorAll('a[href^="#"]').forEach((a) => {
-        a.addEventListener("click", (e) => {
-          const target = document.querySelector(a.getAttribute("href"));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-            // Close mobile menu
-            const collapse = document.querySelector(".navbar-collapse");
-            if (collapse && collapse.classList.contains("show")) {
-              collapse.classList.remove("show");
-            }
-          }
-        });
-      });
-
-      /* ──────────────────────────────────────────
-        FORM TOAST
-      ────────────────────────────────────────── */
-      const urlP = new URLSearchParams(location.search);
-      if (urlP.get("success") || urlP.get("error")) {
-        const ok = !!urlP.get("success");
-        const toast = document.createElement("div");
-        toast.className = "toast-msg " + (ok ? "tok" : "terr");
-        toast.textContent = ok
-          ? "✓ Message sent! We'll be in touch soon."
-          : "✗ Something went wrong. Please try again.";
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 5500);
-      }
-    </script>
-  </body>
+<script src="assets/js/site.js?v3"></script>
+</body>
 </html>
